@@ -3,3 +3,21 @@
 ┌───────┐
 │# hello│
 └───────┘
+      1 0 1 0 / 'abcd' ⍝ Use a boolean array to take elements
+ac
+      '#'=⊃'# hello' ⍝ Take first element, compare to '#'
+1
+      '#'=⊃'hello' ⍝ Take first element, compare to '#'
+0
+      {'#'=⊃⍵}¨'# hello' 'hello' ⍝ Using "each" gives us a bit array 
+1 0
+     lines ← '# hello' 'hello' 
+    ({'#'=⊃⍵}¨lines)/lines ⍝ "/" takes the elements from our source 
+┌───────┐
+│# hello│
+└───────┘
+      ⍝ We can put everything in a function 
+      {({'#'=⊃⍵}¨⍵)/⍵} lines
+┌───────┐
+│# hello│
+└───────┘
