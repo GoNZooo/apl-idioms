@@ -1,0 +1,5 @@
+⍝ {(fB¨⍵)/⍵} A - filters an array; fB is an expr 1/0                                                     
+{({'#'=⊃⍵}¨⍵)/⍵} '# hello' 'hello' 
+┌───────┐
+│# hello│
+└───────┘
