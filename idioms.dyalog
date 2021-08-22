@@ -1,5 +1,5 @@
 ⍝ {(fB¨⍵)/⍵} A - filters an array; fB is an expr -> 1/0                                                     
-{({'#'=⊃⍵}¨⍵)/⍵} '# hello' 'hello' 
+      {({'#'=⊃⍵}¨⍵)/⍵} '# hello' 'hello' 
 ┌───────┐
 │# hello│
 └───────┘
@@ -15,9 +15,9 @@ ac
       ⍝ Using "each" gives us a bit array 
       {'#'=⊃⍵}¨'# hello' 'hello'
 1 0
-     lines ← '# hello' 'hello'
-     ⍝ "/" takes the elements from our source 
-    ({'#'=⊃⍵}¨lines)/lines 
+      lines ← '# hello' 'hello'
+      ⍝ "/" takes the elements from our source 
+      ({'#'=⊃⍵}¨lines)/lines 
 ┌───────┐
 │# hello│
 └───────┘
@@ -26,3 +26,4 @@ ac
 ┌───────┐
 │# hello│
 └───────┘
+
